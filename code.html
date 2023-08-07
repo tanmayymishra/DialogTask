@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <link rel="stylesheet" href="code.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <hr class="hRay" />
+        <div class="title">Bundle & Save</div>
+        <hr class="hRay" />
+      </header>
+      <article class="box" id="showContent">
+        <!-- first box -->
+        <content class="contentBox" id="contentBox1">
+          <div class="visibleRow">
+            <input
+              type="radio"
+              name="item"
+              value="1,"
+              id="radioItem"
+              checked
+              onclick="showItem(1)"
+            />
+            <label for="item1">1 Pair <br /><strong>DKK 195.00</strong></label>
+            <span class="discountTag">50% OFF</span>
+          </div>
+
+          <div class="invisibleRow" id="row1">
+            <div class="itemDeails">
+              <table>
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Size</td>
+                  <td>Color</td>
+                </tr>
+                <tr>
+                  <td>
+                    #1
+                    <select name="size" id="size" class="selectField">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="color" id="color" class="selectField">
+                      <option value="black">Black</option>
+                      <option value="red">Red</option>
+                      <option value="purple">Purple</option>
+                      <option value="green">Green</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    #1
+                    <select name="size" id="size" class="selectField">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="color" id="color" class="selectField">
+                      <option value="black">Black</option>
+                      <option value="red">Red</option>
+                      <option value="purple">Purple</option>
+                      <option value="green">Green</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </content>
+        <!-- second box -->
+        <content class="contentBox" id="contentBox2">
+          <div class="visibleRowSecond">
+            <input
+              type="radio"
+              name="item"
+              value="2"
+              id="radioItem"
+              onclick="showItem(2)"
+            />
+            <label for="item2">2 Pair <br /><strong>DKK 345.00</strong></label>
+            <div class="secondaryText">DKK 195.00</div>
+            <div class="discountSecond">
+              <span class="popular">Most Popular</span>
+              <span class="discountTagSecond">40% OFF</span>
+            </div>
+          </div>
+          <div class="invisibleRow">
+            <div class="itemDeails">
+              <table>
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Size</td>
+                  <td>Color</td>
+                </tr>
+                <tr>
+                  <td>
+                    #1
+                    <select name="size" id="size" class="selectField">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="color" id="color" class="selectField">
+                      <option value="black">Black</option>
+                      <option value="red">Red</option>
+                      <option value="purple">Purple</option>
+                      <option value="green">Green</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    #1
+                    <select name="size" id="size" class="selectField">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="color" id="color" class="selectField">
+                      <option value="black">Black</option>
+                      <option value="red">Red</option>
+                      <option value="purple">Purple</option>
+                      <option value="green">Green</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </content>
+        <!-- third box -->
+        <content class="contentBox" id="contentBox3">
+          <div class="visibleRow">
+            <input
+              type="radio"
+              name="item"
+              value="3"
+              id="radioItem"
+              onclick="showItem(3)"
+            />
+            <label for="item1">3 Pair <br /><strong>DKK 528.00</strong></label>
+            <span class="discountTag">60% OFF</span>
+          </div>
+          <div class="invisibleRow">
+            <div class="itemDeails">
+              <table>
+                <tr>
+                  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Size</td>
+                  <td>Color</td>
+                </tr>
+                <tr>
+                  <td>
+                    #1
+                    <select name="size" id="size" class="selectField">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="color" id="color" class="selectField">
+                      <option value="black">Black</option>
+                      <option value="red">Red</option>
+                      <option value="purple">Purple</option>
+                      <option value="green">Green</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    #1
+                    <select name="size" id="size" class="selectField">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="color" id="color" class="selectField">
+                      <option value="black">Black</option>
+                      <option value="red">Red</option>
+                      <option value="purple">Purple</option>
+                      <option value="green">Green</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </content>
+      </article>
+      <article class="totalPrice">
+        <div class="greenText">Free 2 Day Shipping</div>
+        <div class="total">Total: <strong>DKK 360.00</strong></div>
+      </article>
+      <footer class="footer">
+        <button class="submitButton">+ Add to Cart</button>
+        <div class="footerText">© Powered by Pumper</div>
+      </footer>
+    </main>
+    <script src="code.js"></script>
+  </body>
+</html>

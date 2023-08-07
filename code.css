@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "Metropolis";
+  src: url("./assets/metropolis.regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.title {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0 15px;
+  color: #007f61;
+}
+.hRay {
+  width: 125px;
+  opacity: 0.5;
+  color: #c8c8c8;
+  background-color: #c8c8c8;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  height: 375px;
+  align-items: center;
+  margin: 20px 0px;
+  width: 100%;
+}
+.contentBox {
+  border: 0.9px solid #c8c8c8;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contentBox:nth-child(1) {
+  height: 175px;
+  background-color: rgb(244, 251, 249);
+  border: 2px solid #007f619c;
+}
+
+.visibleRow {
+  display: grid;
+  /* text-align: center; */
+  place-items: center;
+}
+.visibleRowSecond {
+  display: grid;
+  /* text-align: center; */
+  place-items: center;
+}
+.secondaryText {
+  color: #9f9f9f;
+  font-size: 10px;
+  text-decoration: line-through;
+}
+.discountSecond {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.popular {
+  color: #007f61;
+  font-weight: bold;
+}
+.discountTag {
+  margin-left: 100px;
+  font-weight: bold;
+}
+
+#contentBox1 .invisibleRow {
+  display: flex;
+}
+.invisibleRow {
+  display: none;
+  width: 75%;
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: start !important;
+  align-items: start;
+  font-size: 11px;
+}
+
+.itemDeails {
+  font-size: 11px;
+}
+td {
+  padding: 5px;
+}
+tr {
+  margin-right: 200px;
+}
+
+.totalPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.greenText {
+  color: #007f61;
+}
+.footer {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.submitButton {
+  background-color: #007f61;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+}
+.submitButton:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+.footerText {
+  font-weight: 300;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 939px) {
+  .hRay {
+    width: 125px;
+  }
+  .contentBox {
+    height: 75px;
+    width: 30%;
+    min-width: 401px;
+  }
+  .submitButton {
+    width: 30%;
+    height: 50px;
+    min-width: 401px;
+  }
+  .totalPrice {
+    width: 400px;
+    font-size: 14px;
+  }
+  .visibleRow {
+    grid-template-columns: 1fr 7fr 8fr;
+    font-size: 14.46px;
+    font-weight: 400;
+  }
+  .visibleRowSecond {
+    grid-template-columns: 1fr 7fr 4fr 4fr;
+    font-size: 14.46px;
+    font-weight: 400;
+  }
+  .popular {
+    font-size: 13px;
+    margin-top: -5px;
+  }
+  .discountTagSecond {
+    font-weight: bold;
+  }
+  .selectField {
+    padding: 4px 35px 4px 0px;
+  }
+  .footerText {
+    margin-left: 20%;
+  }
+}
+@media screen and (min-width: 607px) and (max-width: 938px) {
+  .hRay {
+    width: 100px;
+  }
+  .contentBox {
+    height: 75px;
+    width: 50%;
+  }
+  .submitButton {
+    width: 50%;
+    height: 50px;
+  }
+  .totalPrice {
+    width: 50%;
+    font-size: 12px;
+  }
+  .visibleRow {
+    grid-template-columns: 1fr 7fr 8fr;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .visibleRowSecond {
+    grid-template-columns: 1fr 7fr 4fr 4fr;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .popular {
+    font-size: 12px;
+    margin-top: -10px;
+  }
+  .discountTagSecond {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .selectField {
+    padding: 4px 30px 4px 0px;
+  }
+  .footerText {
+    margin-left: 30%;
+  }
+}
+@media screen and (max-width: 606px) {
+  .hRay {
+    width: 75px;
+  }
+  .contentBox {
+    height: 75px;
+
+    width: 75%;
+  }
+  .submitButton {
+    width: 75%;
+    height: 50px;
+  }
+  .visibleRow {
+    grid-template-columns: 1fr 7fr 8fr;
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .visibleRowSecond {
+    grid-template-columns: 1fr 7fr 4fr 4fr;
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .popular {
+    font-size: 10px;
+    margin-top: -15px;
+  }
+  .discountTagSecond {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .totalPrice {
+    width: 75%;
+    font-size: 10px;
+  }
+  .selectField {
+    padding: 4px 20px 4px 0px;
+  }
+  .footerText {
+    margin-left: 40%;
+  }
+}
