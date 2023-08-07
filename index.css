@@ -93,7 +93,9 @@ body {
   margin-left: 100px;
   font-weight: bold;
 }
-
+#radioItem {
+  accent-color: #007f619c;
+}
 #contentBox1 .invisibleRow {
   display: flex;
 }
